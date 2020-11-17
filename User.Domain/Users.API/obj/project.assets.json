@@ -1,0 +1,75 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": []
+  },
+  "packageFolders": {
+    "C:\\Users\\krystel.menot\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\krystel.menot\\source\\repos\\LittleBigPlanetApplication\\User.Domain\\Users.API\\Users.API.csproj",
+      "projectName": "Users.API",
+      "projectPath": "C:\\Users\\krystel.menot\\source\\repos\\LittleBigPlanetApplication\\User.Domain\\Users.API\\Users.API.csproj",
+      "packagesPath": "C:\\Users\\krystel.menot\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\krystel.menot\\source\\repos\\LittleBigPlanetApplication\\User.Domain\\Users.API\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\krystel.menot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://tfsdropserver.cdbdx.biz:8082/repository/nugetgroupcdiscount": {},
+        "http://tfsdropserver:8082/repository/LogisticTransport/": {},
+        "http://tfsdropserver:8082/repository/NuGet-Net-Foundation": {},
+        "http://tfsdropserver:8082/repository/NuGet-NetCore-Official/": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.cdiscount.com/nuget/": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "MhIrJeYj/4IJJ+sere7f6S7UYINsYSIHR66KDy692a9bykNi/iUA9nHsjiLLSeK7HzVDG1HJHa4WsG8Kqr9WaQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\krystel.menot\\source\\repos\\LittleBigPlanetApplication\\User.Domain\\Users.Domain\\Users.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\krystel.menot\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\krystel.menot\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
