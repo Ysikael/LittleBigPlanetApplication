@@ -27,9 +27,9 @@ steps:
             $githubDir = $stageDir +"\"+"gitHub"
             $destination = $githubDir +"\"+"<LittleBigPlanetRepository.git>.git"
             #please provide your username
-            $alias = '<Ysikael>:'+ "$(0cf20d28fc63fca35eb48357f396f415ebfc7fda)"
+            $alias = '<Ysikael>:'+ "$(8af4cb697c26c6d6619c2ff808a3f01138c00500)"
             #Please make sure, you remove https from azure-repo-clone-url
-            $sourceURL = 'https://$(0cf20d28fc63fca35eb48357f396f415ebfc7fda)@<github.com/LittleBigPlanetOrganisation/LittleBigPlanetRepository.git>'
+            $sourceURL = 'https://$(8af4cb697c26c6d6619c2ff808a3f01138c00500)@<github.com/LittleBigPlanetOrganisation/LittleBigPlanetRepository.git>'
             #Please make sure, you remove https from github-repo-clone-url
             $destURL = 'https://' + $alias + '@<LittleBigPlanet@dev.azure.com/LittleBigPlanet/LittleBigPlanetApplication/_git/LittleBigPlanetRepository.git>'
             #Check if the parent directory exists and delete
