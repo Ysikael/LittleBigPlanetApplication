@@ -12,6 +12,9 @@ pool:
 steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
+- task: gitsync@1
+  inputs:
+    GitRepoUrl: 'https://github.com/LittleBigPlanetOrganisation/LittleBigPlanetRepository.git'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
