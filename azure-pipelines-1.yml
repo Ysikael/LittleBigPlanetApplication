@@ -22,4 +22,4 @@ steps:
     git push --prune https://$(AccessTokenA)@dev.azure.com/$A_LittleBigPlanetRepository \
         +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*
   displayName: 'Copy to Github'
-  condition: eq(variables['Build.SourceBranch'], 'refs/heads/master'
+  condition: eq(variables['Build.SourceBranch']), 'refs/heads/master'
