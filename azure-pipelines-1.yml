@@ -25,4 +25,4 @@ steps:
   condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
 
 - bash: |
-    echo $MYSECRET
+    echo $(MYSECRET)
