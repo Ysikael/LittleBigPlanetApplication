@@ -9,20 +9,20 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: |
-  env:
-    MYSECRET: "coucou"
-  displayName: 'Run a one-line script'
+  - script: |
+    env:
+      MYSECRET: "coucou"
+    displayName: 'Run a one-line script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-  displayName: 'Run a multi-line script'
+  - script: |
+      echo Add other tasks to build, test, and deploy your project.
+    displayName: 'Run a multi-line script'
 
-- bash: |
-    echo $MYSECRET
+  - bash: |
+      echo $MYSECRET
     
-- bash: |
-    git push --prune https://bilgmn6ily2wlblmx2zgtasdpu2cds5wv2uogyyjy7gna2likyfq@dev.azure.com/$A_LittleBigPlanetRepository \
-        +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*
-  displayName: 'Copy to Azure'
-  condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+  - bash: |
+      git push --prune https://bilgmn6ily2wlblmx2zgtasdpu2cds5wv2uogyyjy7gna2likyfq@dev.azure.com/$A_LittleBigPlanetRepository \
+          +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*
+    displayName: 'Copy to Azure'
+    condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
