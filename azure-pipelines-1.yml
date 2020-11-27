@@ -11,7 +11,7 @@ pool:
 steps:
 - script: |
   env:
-    MYSECRET: "bilgmn6ily2wlblmx2zgtasdpu2cds5wv2uogyyjy7gna2likyfq"
+    MYSECRET: "coucou"
   displayName: 'Run a one-line script'
 
 - script: |
