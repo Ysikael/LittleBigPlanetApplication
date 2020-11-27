@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 
 - bash: |
-    git push --prune https://${test}@dev.azure.com/$A_LittleBigPlanetRepository \
+    git push --prune https://${TEST}@dev.azure.com/$A_LittleBigPlanetRepository \
         +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*
   displayName: 'Copy to Azure'
   condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
