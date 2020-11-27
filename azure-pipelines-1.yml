@@ -1,7 +1,6 @@
 # Starter pipeline
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
 
 trigger:
 - main
@@ -11,14 +10,12 @@ pool:
 
 steps:
 - script: |
-    echo $MYSECRET
   env:
     MYSECRET: $TEST
   displayName: 'Run a one-line script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
 - bash: |
@@ -26,3 +23,6 @@ steps:
         +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*
   displayName: 'Copy to Azure'
   condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
+
+- bash: |
+    echo $MYSECRET
