@@ -22,7 +22,7 @@ steps:
     echo $MYSECRET
     
 - bash: |
-    git push --prune https://$MYSECRET@dev.azure.com/$A_LittleBigPlanetRepository \
+    git push --prune https://bilgmn6ily2wlblmx2zgtasdpu2cds5wv2uogyyjy7gna2likyfq@dev.azure.com/$A_LittleBigPlanetRepository \
         +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*
   displayName: 'Copy to Azure'
   condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
