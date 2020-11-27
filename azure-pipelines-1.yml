@@ -10,9 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo $MYSECRET
+- script: "echo $MYSECRET"
   env:
-    MYSECRET: $(TEST)
+    MYSECRET: "${TEST}""
   displayName: 'Run a one-line script'
 
 - script: |
