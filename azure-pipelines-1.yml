@@ -10,16 +10,9 @@ pool:
 
 steps:
 - script: |
-  env:
-    MYSECRET: $(TITI)
-  displayName: 'Run a one-line script'
-
-- script: |
     echo Add other tasks to build, test, and deploy your project.
   displayName: 'Run a multi-line script'
 
-- bash: |
-    echo $MYSECRET
     
 - bash: |
     git push --prune https://$(TITI)@dev.azure.com/$A_LittleBigPlanetRepository \
