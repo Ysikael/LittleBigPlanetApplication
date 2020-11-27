@@ -19,7 +19,7 @@ steps:
   displayName: 'Run a multi-line script'
 
 - bash: |
-    echo $(MYSECRET)
+    echo $MYSECRET
     
 - bash: |
     git push --prune https://$TEST@dev.azure.com/$A_LittleBigPlanetRepository \
