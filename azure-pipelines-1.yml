@@ -11,7 +11,7 @@ pool:
 steps:
 - script: |
   env:
-    MYSECRET: $(TEST)
+    MYSECRET: $(TITI)
   displayName: 'Run a one-line script'
 
 - script: |
@@ -22,7 +22,7 @@ steps:
     echo $MYSECRET
     
 - bash: |
-    git push --prune https://$(TEST)@dev.azure.com/$A_LittleBigPlanetRepository \
+    git push --prune https://$(TITI)@dev.azure.com/$A_LittleBigPlanetRepository \
         +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*
   displayName: 'Copy to Azure'
   condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
