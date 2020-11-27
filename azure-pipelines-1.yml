@@ -10,7 +10,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
+- script: echo $MYSECRET
+  env:
+    MYSECRET: $TEST
   displayName: 'Run a one-line script'
 
 - script: |
@@ -21,6 +23,5 @@ steps:
 - bash: |
     git push --prune https://$TEST@dev.azure.com/$A_LittleBigPlanetRepository \
         +refs/remotes/origin/*:refs/heads/* +refs/tags/*:refs/tags/*
-          echo $TEST
   displayName: 'Copy to Azure'
   condition: eq(variables['Build.SourceBranch'], 'refs/heads/master')
